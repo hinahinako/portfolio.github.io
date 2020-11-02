@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <!-- 上部ナビゲーションバー -->
-    <!-- <v-card class="overflow-hidden"> -->
     <v-app-bar
       app
       flat
@@ -10,12 +9,6 @@
       scroll-target="#scrolling-techniques-3"
       dense
     >
-      <!-- <template v-slot:img="{ props }">
-        <v-img
-          v-bind="props"
-          gradient="to top right, rgba(230,150,190,.7), rgba(250,120,200,.7)"
-        ></v-img>
-      </template> -->
       <v-toolbar-title class="font-weight-black red--text text--lighten-2">{{
         title
       }}</v-toolbar-title>
@@ -30,17 +23,7 @@
       <v-btn icon href="https://qiita.com/hinaqiita" target="_brank">
         <v-icon color="#4CAF50">mdi-alpha-q-box</v-icon>
       </v-btn>
-      <!-- <template v-slot:extension>
-        <v-tabs align-with-title>
-          <v-tab to="/">{{ tab1 }}</v-tab>
-          <v-tab to="/about">{{ tab2 }}</v-tab>
-          <v-tab>{{ tab3 }}</v-tab>
-          <v-tab>{{ tab4 }}</v-tab>
-          <v-tab>{{ tab5 }}</v-tab>
-        </v-tabs>
-      </template> -->
     </v-app-bar>
-    <!-- </v-card> -->
 
     <!-- メイン -->
     <v-main class="pa-0 pt-10">
@@ -49,7 +32,7 @@
       </v-container>
     </v-main>
 
-    <!-- フッタ -->
+    <!-- フッター -->
     <v-footer absolute color="grey lighten-3">
       <span>&copy; {{ new Date().getFullYear() }}</span>
       <span class="ml-2">hinako</span>
@@ -63,11 +46,6 @@ export default {
     return {
       fixed: false,
       title: "Portfolio by hinako",
-      // tab1: "TOP",
-      // tab2: "ABOUT ME",
-      // tab3: "WORK",
-      // tab4: "Tech Logs(Blog)",
-      // tab5: "Other Logs",
     };
   },
 };

@@ -4,12 +4,10 @@
       <!-- TOP -->
       <v-container class="text-center">
         <h2 class="display-2 font-weight-bold mb-3">はじめまして！</h2>
-
         <v-responsive class="mx-auto mb-8" width="56">
           <v-divider class="mb-1"></v-divider>
           <v-divider></v-divider>
         </v-responsive>
-
         <v-avatar class="elevation-12 mb-12" size="250">
           <v-img src="/image/hinako.png"></v-img>
         </v-avatar>
@@ -27,14 +25,13 @@
         </v-responsive>
         <div></div>
       </v-container>
-
       <div class="py-6"></div>
       <v-divider></v-divider>
       <div class="py-12"></div>
     </section>
 
+    <!-- 自己紹介 -->
     <section id="profile">
-      <!-- 自己紹介 -->
       <v-container class="text-center">
         <h2 class="display-2 font-weight-bold mb-3">自己紹介</h2>
         <v-responsive class="mx-auto mb-8" width="56">
@@ -44,9 +41,7 @@
 
         <v-row justify="center" class="mx-3">
           <v-col cols="11" md="5">
-            <!-- <v-avatar class="elevation-12 mb-12" size="250"> -->
             <v-img src="/image/profile.png" aspect-ratio="1.0"></v-img>
-            <!-- </v-avatar> -->
           </v-col>
           <v-col cols="11" md="7" class="text-left">
             <h2 class="mb-4 ml-3">やってきたこと</h2>
@@ -81,7 +76,6 @@
           <v-divider class="mb-1"></v-divider>
           <v-divider></v-divider>
         </v-responsive>
-
         <v-row>
           <v-col
             v-for="({ icon, title, skills }, i) in experiences"
@@ -123,7 +117,6 @@
           </v-col>
         </v-row>
       </v-container>
-
       <div class="py-12"></div>
     </section>
 
@@ -169,7 +162,6 @@
           <v-divider class="mb-1"></v-divider>
           <v-divider></v-divider>
         </v-responsive>
-
         <v-row justify="center">
           <v-col cols="10" md="6" class="pa-8">
             <h3 class="font-weight-black text-center mb-4">成績</h3>
@@ -222,21 +214,11 @@
               <v-row>
                 <v-col v-if="!!link" cols="12">
                   <a :href="link" target="_brank">
-                    <v-img
-                      :src="src"
-                      height="230"
-                      aspect-ratio="1.0"
-                      eager
-                    ></v-img>
+                    <v-img :src="src" height="230" aspect-ratio="1.0"></v-img>
                   </a>
                 </v-col>
                 <v-col v-else cols="12">
-                  <v-img
-                    :src="src"
-                    height="230"
-                    aspect-ratio="1.0"
-                    eager
-                  ></v-img>
+                  <v-img :src="src" height="230" aspect-ratio="1.0"></v-img>
                 </v-col>
                 <v-col cols="1">
                   <v-btn
@@ -290,7 +272,6 @@
           <v-divider class="mb-1"></v-divider>
           <v-divider></v-divider>
         </v-responsive>
-
         <v-responsive class="mx-auto mb-12" width="250">
           <a
             href="https://twitter.com/hinatwt503"
