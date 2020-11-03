@@ -38,7 +38,6 @@
           <v-divider class="mb-1"></v-divider>
           <v-divider></v-divider>
         </v-responsive>
-
         <v-row justify="center" class="mx-3">
           <v-col cols="11" md="5">
             <v-img src="/image/profile.png" aspect-ratio="1.0"></v-img>
@@ -68,7 +67,7 @@
     </section>
 
     <!-- スキル -->
-    <section id="works" class="grey lighten-3">
+    <section id="skills" class="grey lighten-3">
       <div class="py-12"></div>
       <v-container class="text-center">
         <h2 class="display-2 font-weight-bold mb-3">スキル</h2>
@@ -110,7 +109,59 @@
                   ></v-rating>
                 </v-col>
                 <v-col cols="4" align-self="center">
-                  <v-card-subtitle>{{ years }}年 </v-card-subtitle>
+                  <v-card-subtitle v-if="1 <= years"
+                    >{{ years }}年</v-card-subtitle
+                  >
+                  <v-card-subtitle v-else>1年未満</v-card-subtitle>
+                </v-col>
+              </v-row>
+            </v-card>
+          </v-col>
+        </v-row>
+      </v-container>
+      <!-- 触った・試したことがある技術 -->
+      <v-container class="text-center">
+        <v-row justify="center">
+          <v-col cols="12" md="4">
+            <v-card class="py-12 px-4" color="grey lighten-5" flat>
+              <v-theme-provider dark>
+                <div>
+                  <v-avatar color="red lighten-2" size="88">
+                    <v-icon large>mdi-docker</v-icon>
+                  </v-avatar>
+                </div>
+              </v-theme-provider>
+              <v-card-title class="justify-center font-weight-black">
+                触ったことのある技術
+              </v-card-title>
+              <v-row cols="12">
+                <v-col cols="12" align-self="center">
+                  <v-card-subtitle
+                    >Bootstrap/CircleCI/Docker/Firebase Authentication/Firebase
+                    Realtime Database/GitHub Actions/OAuth/Sequelize/Spring
+                    Boot/Ubuntu</v-card-subtitle
+                  >
+                </v-col>
+              </v-row>
+            </v-card>
+          </v-col>
+          <v-col cols="12" md="4">
+            <v-card class="py-12 px-4" color="grey lighten-5" flat>
+              <v-theme-provider dark>
+                <div>
+                  <v-avatar color="red lighten-2" size="88">
+                    <v-icon large>mdi-certificate-outline</v-icon>
+                  </v-avatar>
+                </div>
+              </v-theme-provider>
+              <v-card-title class="justify-center font-weight-black">
+                資格
+              </v-card-title>
+              <v-row justify="center">
+                <v-col cols="6" align-self="center">
+                  <v-card-subtitle class="text-left"
+                    >・Java SE8 Silver <br />・TOEIC 735点</v-card-subtitle
+                  >
                 </v-col>
               </v-row>
             </v-card>
@@ -317,11 +368,11 @@ export default {
       },
       {
         icon: "mdi-desktop-mac",
-        title: "その他",
+        title: "ツール",
         skills: [
           { name: "RPA(BizRobo!)", years: 1.0 },
           { name: "Slack", years: 2.0 },
-          { name: "GitHub", years: 0.8 },
+          { name: "GitHub", years: 1.0 },
         ],
       },
     ],
@@ -353,7 +404,7 @@ export default {
         tech: "node.js/Express/PostgreSQL/Docker/Sequelize",
         title: "オン飲みで盛り上がる! NGワードゲーム",
         text:
-          "個人的に作った遊びです。node.jsとマイグレーションツールを使ってみたくて作成しました。プライベートリポジトリでリファクタ中です..",
+          "個人的に作った遊びです。node.jsとマイグレーションツールを使ってみたくて作成しました。プライベートリポジトリでリファクタ中です。。",
       },
       {
         src: "/image/blog.png",
@@ -362,6 +413,13 @@ export default {
         title: "ITに関するTipsをためておくところ",
         text:
           "ブログです。「Qiitaに書くほどでもないけどメモしておきたい」というITのTipsを書いてます。自分用です。",
+      },
+      {
+        src: "/image/portfolio.png",
+        link: "https://hina-portfolio.web.app/",
+        tech: "Nuxt.js/Vuetify/Firebase",
+        title: "ポートフォリオ ",
+        text: "このサイトです。",
       },
     ],
   }),
