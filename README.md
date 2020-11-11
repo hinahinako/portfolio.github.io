@@ -1,20 +1,9 @@
-# portfolio
+# 概要
+ポートフォリオです
 
-## Build Setup
+# デモ
+https://hina-portfolio.web.app/
 
-```bash
-# install dependencies
-$ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+# 見た目
+![hina-portfolio web app_ (1)](https://user-images.githubusercontent.com/44778704/98841411-69433b80-248b-11eb-955c-940d1d921c2a.png)
